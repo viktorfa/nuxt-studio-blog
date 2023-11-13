@@ -1,0 +1,301 @@
+[
+  {
+    "image": "test:bunnpris_gomorgen.jpg",
+    "results": [
+      {
+        "uri": "meny:product:7038010068225",
+        "imageUrl": "https://bilder.ngdata.no/7038010068225/meny/medium.jpg",
+        "title": "Go Morgen Yoghurt",
+        "score": 0.5320610404014587
+      },
+      {
+        "uri": "meny:product:7038010068256",
+        "imageUrl": "https://bilder.ngdata.no/7038010068256/meny/medium.jpg",
+        "title": "Go Morgen Yoghurt",
+        "score": 0.5237404108047485
+      },
+      {
+        "uri": "meny:product:7038010057571",
+        "imageUrl": "https://bilder.ngdata.no/7038010057571/meny/medium.jpg",
+        "title": "Go Morgen Yoghurt",
+        "score": 0.5126336812973022
+      }
+    ]
+  },
+  {
+    "image": "test:bunnpris_sjokomelk.jpg",
+    "results": [
+      {
+        "uri": "meny:product:7038010035159",
+        "imageUrl": "https://bilder.ngdata.no/7038010035159/meny/medium.jpg",
+        "title": "Sjokomelk",
+        "score": 0.4648407995700836
+      },
+      {
+        "uri": "meny:product:7038010042461",
+        "imageUrl": "https://bilder.ngdata.no/7038010042461/meny/medium.jpg",
+        "title": "Sjokomelk",
+        "score": 0.4616837203502655
+      },
+      {
+        "uri": "meny:product:7038010035876",
+        "imageUrl": "https://bilder.ngdata.no/7038010035876/meny/medium.jpg",
+        "title": "Litago Melk",
+        "score": 0.3351983428001404
+      }
+    ]
+  },
+  {
+    "image": "test:mega_sjokomelk.png",
+    "results": [
+      {
+        "uri": "meny:product:7038010064609",
+        "imageUrl": "https://bilder.ngdata.no/7038010064609/meny/medium.jpg",
+        "title": "Tinemelk Sjokolade",
+        "score": 0.4673803746700287
+      },
+      {
+        "uri": "meny:product:7038010070099",
+        "imageUrl": "https://bilder.ngdata.no/7038010070099/meny/medium.jpg",
+        "title": "Sjokolademelk",
+        "score": 0.4598095417022705
+      },
+      {
+        "uri": "meny:product:7038010065477",
+        "imageUrl": "https://bilder.ngdata.no/7038010065477/meny/medium.jpg",
+        "title": "Melk m/Vanilje",
+        "score": 0.4457661807537079
+      }
+    ]
+  },
+  {
+    "image": "test:meny_sjokomelk.png",
+    "results": [
+      {
+        "uri": "meny:product:7038010042461",
+        "imageUrl": "https://bilder.ngdata.no/7038010042461/meny/medium.jpg",
+        "title": "Sjokomelk",
+        "score": 0.3909904658794403
+      },
+      {
+        "uri": "meny:product:7038010035159",
+        "imageUrl": "https://bilder.ngdata.no/7038010035159/meny/medium.jpg",
+        "title": "Sjokomelk",
+        "score": 0.3810299634933471
+      },
+      {
+        "uri": "meny:product:7038010054488",
+        "imageUrl": "https://bilder.ngdata.no/7038010054488/meny/medium.jpg",
+        "title": "Cottage Cheese",
+        "score": 0.3573618829250335
+      }
+    ]
+  },
+  {
+    "image": "test:obs_melange.png",
+    "results": [
+      {
+        "uri": "meny:product:7036110009735",
+        "imageUrl": "https://bilder.ngdata.no/7036110009735/meny/medium.jpg",
+        "title": "Melange Margarin",
+        "score": 0.6557447910308838
+      },
+      {
+        "uri": "meny:product:7036110009698",
+        "imageUrl": "https://bilder.ngdata.no/7036110009698/meny/medium.jpg",
+        "title": "Melange Margarin",
+        "score": 0.6551348567008972
+      },
+      {
+        "uri": "meny:product:7036110009711",
+        "imageUrl": "https://bilder.ngdata.no/7036110009711/meny/medium.jpg",
+        "title": "Melange Margarin",
+        "score": 0.5531324744224548
+      }
+    ]
+  },
+  {
+    "image": "test:obs_philly.png",
+    "results": [
+      {
+        "uri": "meny:product:7036110009698",
+        "imageUrl": "https://bilder.ngdata.no/7036110009698/meny/medium.jpg",
+        "title": "Melange Margarin",
+        "score": 0.3041593730449676
+      },
+      {
+        "uri": "meny:product:7394376619915",
+        "imageUrl": "https://bilder.ngdata.no/7394376619915/meny/medium.jpg",
+        "title": "Havregurt",
+        "score": 0.303716242313385
+      },
+      {
+        "uri": "meny:product:7038010044519",
+        "imageUrl": "https://bilder.ngdata.no/7038010044519/meny/medium.jpg",
+        "title": "Milkshake",
+        "score": 0.2996826767921448
+      }
+    ]
+  },
+  {
+    "image": "test:obs_yt.png",
+    "results": [
+      {
+        "uri": "meny:product:7038010004261",
+        "imageUrl": "https://bilder.ngdata.no/7038010004261/meny/medium.jpg",
+        "title": "Yt Restitusjon",
+        "score": 0.4464215934276581
+      },
+      {
+        "uri": "meny:product:7038010004254",
+        "imageUrl": "https://bilder.ngdata.no/7038010004254/meny/medium.jpg",
+        "title": "Yt Restitusjon",
+        "score": 0.4162876307964325
+      },
+      {
+        "uri": "meny:product:7038010068157",
+        "imageUrl": "https://bilder.ngdata.no/7038010068157/meny/medium.jpg",
+        "title": "Yt Proteinmelk",
+        "score": 0.4161780476570129
+      }
+    ]
+  },
+  {
+    "image": "test:oda_egg.jpg",
+    "results": [
+      {
+        "uri": "meny:product:7090000510220",
+        "imageUrl": "https://bilder.ngdata.no/7090000510220/meny/medium.jpg",
+        "title": "G\u00e5rdsegg L",
+        "score": 0.800380289554596
+      },
+      {
+        "uri": "meny:product:7090000515096",
+        "imageUrl": "https://bilder.ngdata.no/7090000515096/meny/medium.jpg",
+        "title": "G\u00e5rdsegg",
+        "score": 0.4369824230670929
+      },
+      {
+        "uri": "meny:product:7090031030018",
+        "imageUrl": "https://bilder.ngdata.no/7090031030018/meny/medium.jpg",
+        "title": "Egg \u00d8kologisk",
+        "score": 0.3652291595935821
+      }
+    ]
+  },
+  {
+    "image": "test:oda_meierism\u00f8r.jpg",
+    "results": [
+      {
+        "uri": "meny:product:7038010010316",
+        "imageUrl": "https://bilder.ngdata.no/7038010010316/meny/medium.jpg",
+        "title": "Meierism\u00f8r",
+        "score": 0.8961695432662964
+      },
+      {
+        "uri": "meny:product:7038010010187",
+        "imageUrl": "https://bilder.ngdata.no/7038010010187/meny/medium.jpg",
+        "title": "Meierism\u00f8r",
+        "score": 0.8763684034347534
+      },
+      {
+        "uri": "meny:product:7038010011702",
+        "imageUrl": "https://bilder.ngdata.no/7038010011702/meny/medium.jpg",
+        "title": "Sm\u00f8r Usaltet",
+        "score": 0.8454000353813171
+      }
+    ]
+  },
+  {
+    "image": "test:oda_sjokomelk.jpg",
+    "results": [
+      {
+        "uri": "meny:product:7038010042461",
+        "imageUrl": "https://bilder.ngdata.no/7038010042461/meny/medium.jpg",
+        "title": "Sjokomelk",
+        "score": 0.4738543629646301
+      },
+      {
+        "uri": "meny:product:7038010035159",
+        "imageUrl": "https://bilder.ngdata.no/7038010035159/meny/medium.jpg",
+        "title": "Sjokomelk",
+        "score": 0.4729407727718353
+      },
+      {
+        "uri": "meny:product:7038010066689",
+        "imageUrl": "https://bilder.ngdata.no/7038010066689/meny/medium.jpg",
+        "title": "Sjokolademelk",
+        "score": 0.3944883942604065
+      }
+    ]
+  },
+  {
+    "image": "test:oda_syrna.jpg",
+    "results": [
+      {
+        "uri": "meny:product:7090006470320",
+        "imageUrl": "https://bilder.ngdata.no/7090006470320/meny/medium.jpg",
+        "title": "Syrna Mj\u00f8lk Bl\u00e5",
+        "score": 0.8523196578025818
+      },
+      {
+        "uri": "meny:product:7090006473260",
+        "imageUrl": "https://bilder.ngdata.no/7090006473260/meny/medium.jpg",
+        "title": "Bakemj\u00f8lk",
+        "score": 0.4642573297023773
+      },
+      {
+        "uri": "meny:product:7090006470368",
+        "imageUrl": "https://bilder.ngdata.no/7090006470368/meny/medium.jpg",
+        "title": "Lettmj\u00f8lk Fersk",
+        "score": 0.4400098323822021
+      }
+    ]
+  },
+  {
+    "image": "test:rema_biola.jpg",
+    "results": [
+      {
+        "uri": "meny:product:7038010054730",
+        "imageUrl": "https://bilder.ngdata.no/7038010054730/meny/medium.jpg",
+        "title": "Biola Syrnet Melk",
+        "score": 0.5174804329872131
+      },
+      {
+        "uri": "meny:product:7038010002274",
+        "imageUrl": "https://bilder.ngdata.no/7038010002274/meny/medium.jpg",
+        "title": "Biola Syrnet Melk",
+        "score": 0.4767994284629822
+      },
+      {
+        "uri": "meny:product:7038010054747",
+        "imageUrl": "https://bilder.ngdata.no/7038010054747/meny/medium.jpg",
+        "title": "Biola Syrnet Melk",
+        "score": 0.4629480540752411
+      }
+    ]
+  },
+  {
+    "image": "test:rema_sm\u00f8remyk.png",
+    "results": [
+      {
+        "uri": "meny:product:7033330013511",
+        "imageUrl": "https://bilder.ngdata.no/7033330013511/meny/medium.jpg",
+        "title": "Bremykt",
+        "score": 0.4077181220054626
+      },
+      {
+        "uri": "meny:product:7036110010472",
+        "imageUrl": "https://bilder.ngdata.no/7036110010472/meny/medium.jpg",
+        "title": "Soft Flora",
+        "score": 0.3793356120586395
+      },
+      {
+        "uri": "meny:product:7038010070310",
+        "imageUrl": "https://bilder.ngdata.no/7038010070310/meny/medium.jpg",
+        "title": "Gryr Sm\u00f8reblid",
+        "score": 0.3718546628952026
+      }
+    ]
+  }
+]
