@@ -35,7 +35,7 @@ This guide will use
 yarn create strapi-app serverless-strapi-4-guide --quickstart
 ```
 
-![create strapi app.png](./create strapi app.png)
+![create strapi app.png](./create_strapi_app.png)
 
 This will create a new folder and automatically install the dependencies, start Strapi and open a browser window. If it does not open, just visit http://localhost:1337/admin to see the admin dashboard. You can register a user to see that it works, but we will change databases and not use this user later.
 
@@ -123,7 +123,7 @@ yarn serverless deploy
 
 If you have not used the Serverless framework before, you have to do some configuration. Create a role for serverless and make a user with the client id and client secret in `~/.aws/credentials`. See [the guide](https://www.serverless.com/framework/docs/providers/aws/guide/credentials/) from Serverless on how to do this on. If you don't have an AWS account yet, you can register one in the [AWS console](https://aws.amazon.com/console/).
 
-![aws credentials file.png](./aws credentials file.png)
+![aws credentials file.png](./aws_credentials_file.png)
 *This is the profile this guide will use from ~/.aws/credentials*
 
 
@@ -131,7 +131,7 @@ If you have not used the Serverless framework before, you have to do some config
 yarn serverless deploy --aws-profile strapi-serverless-admin
 ```
 
-![./serverless hello deployed.png](serverless hello deployed.png)
+![./serverless hello deployed.png](serverless_hello_deployed.png)
 
 It should now be deployed and available on the url showed in the terminal. Visit the url to be sure that it works. 
 
@@ -147,38 +147,38 @@ We will create the database in the AWS web console using so called "click ops". 
 
 Go to the AWS web console and remember to switch to the region you want to deploy to. This guide will use eu-central-1. Search for RDS in the search bar and select RDS. Click the button to create a new database. 
 
-![select rds.png](./select rds.png)
+![select rds.png](./select_rds.png)
 
 Select PostgreSQL as the database. It's probably a good idea to select the latest PostgreSQL version. Choose a cluster name, username and password. It's not a good idea to use the default username, as this makes the database more vulnerable to bots who automatically guess credentials. [Generate a password](https://passwordsgenerator.net/) 32 characters long with only letters and numbers as some special characters are not supported. Copy and paste the password somewhere as you will not see the password again.
 
-![create postgres 1.png](./create postgres 1.png)
+![create postgres 1.png](./create_postgres_1.png)
 
 Choose the default db.t3.micro instance. You can of course modify the configuration to fit your needs, but this guide will choose the cheapest options. Select to create a new VPC.
 
-![create postgres 2.png](./create postgres 2.png)
-![create postgres 3.png](./create postgres 3.png)
+![create postgres 2.png](./create_postgres_2.png)
+![create postgres 3.png](./create_postgres_3.png)
 
 Check the "Allow public access" option and select create to create a new VPC security group.
 
-![create postgres 4.png](./create postgres 4.png)
+![create postgres 4.png](./create_postgres_4.png)
 
 Monitoring can be useful if you plan to use this database in production, but it will add some cost if you go above the free tier of CloudWatch logs. Choose an initial database name such as "strapi4". The rest of the options can just the the default ones.
 
-![create postgres 5.png](./create postgres 5.png)
-![create postgres 6.png](./create postgres 6.png)
+![create postgres 5.png](./create_postgres_5.png)
+![create postgres 6.png](./create_postgres_6.png)
 
 Scroll down and click the button to create the database. You will need to wait about 5 minutes for the instance to be ready. When it's ready you can see the endpoint which we will use to connect to the database from Strapi.
 
-![creating postgres.png](./creating postgres.png)
+![creating postgres.png](./creating_postgres.png)
 
 The last thing is to enable access from all IP addresses. Since we generated a long password, this is not a considerable security risk for most cases.
 
-![postgres overview.png](./postgres overview.png)
+![postgres overview.png](./postgres_overview.png)
 
 Under "Security" in the instance overview, select the VPC security group. Go to "Inbound rules" and click "Edit inbound rules". Select "Anywhere-IPv4" under "Source" and save. 
 
-![select inbound rules.png](./select inbound rules.png)
-![security group anywhere.png](./security group anywhere.png)
+![select inbound rules.png](./select_inbound_rules.png)
+![security group anywhere.png](./security_group_anywhere.png)
 
 ## Connecting to the new database with Strapi
 
@@ -408,7 +408,7 @@ BUILD_FOR_OFFLINE=true yarn build
 serverless offline
 ```
 
-![yarn strapi build.png](./yarn strapi build.png)
+![yarn strapi build.png](./yarn_strapi_build.png)
 
 Go to http://localhost:3000/dev/index.html then log in see see that it works. Strapi is now connected to the database in the cloud and running on Lambda locally.
 
@@ -420,7 +420,7 @@ serverless deploy
 
 It should upload successfully. Note that the UI will not work, as we use `http://localhost:3000/dev` as the SERVER_URL. After running `serverless deploy` you should see a url in the format of `https://YOUR_HASH.execute-api.eu-central-1.amazonaws.com/dev` in the console. Copy this and paste it in `.env`.
 
-![serverless deployed.png](./serverless deployed.png)
+![serverless deployed.png](./serverless_deployed.png)
 
 ```
 # .env

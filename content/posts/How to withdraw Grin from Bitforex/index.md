@@ -42,7 +42,7 @@ TODO use console
 You need to install a web server on your computer to handle incoming connections. We will use good old Apache for this tutorial as it's so commonly used.
 First, we update the software on the server with `apt update` and `apt dist-upgrade -y`.
 Then, we install Apache with `apt install apache2 -y`. (We automatically configure a firewall for the server with `ufw allow 'Apache Full'` – this opens only ports 80 (HTTP) and 443 (HTTPS).)
-You should now be able to visit your virtual server in a web browser by typing in the IP address you see on Vultr in your address bar. If you don't get this page, something is wrong. You can debug by following a more detailed tutorial [here](https://www.digitalocean.com/community/tutorials/how-to-install-the-apache-web-server-on-ubuntu-18-04).![Apache default page.](apache-default-page.png)
+You should now be able to visit your virtual server in a web browser by typing in the IP address you see on Vultr in your address bar. If you don't get this page, something is wrong. You can debug by following a more detailed tutorial [here](https://www.digitalocean.com/community/tutorials/how-to-install-the-apache-web-server-on-ubuntu-18-04).![Apache_default_page.](apache-default-page.png)
 
 #### Configure your domain
 

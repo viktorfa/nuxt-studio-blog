@@ -22,8 +22,8 @@ En kontroversiell bruk av overskuddet er å kjøpe tilbake egne aksjer. Det gir 
 
 I de siste årene har vi sett en voldsom økning i etterkjøp av egne aksjer i store selskaper. Det kan ha negetive konsekvenser for økonomien, og er også et tegn på at noe er fundamentalt galt.
 
-![Googlesøk på "biggest stock buybacks" 29. mars 2020. (del 1)](google-search-stock-buybacks-1.png)
-![Googlesøk på "biggest stock buybacks" 29. mars 2020. (del 2)](google-search-stock-buybacks-2.png)
+![Googlesøk på "biggest stock buybacks" 29. mars 2020. (del_1)](google-search-stock-buybacks-1.png)
+![Googlesøk på "biggest stock buybacks" 29. mars 2020. (del_2)](google-search-stock-buybacks-2.png)
 
 ## Hvorfor stock buybacks
 

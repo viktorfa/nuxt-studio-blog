@@ -27,7 +27,7 @@ export default defineAppConfig({
     },
     socials: {
       twitter: "vikfand",
-      instagram: "viktorandersen",
+      instagram: "viktorfandersen",
       linkedin: {
         icon: "uil:linkedin",
         label: "LinkedIn",

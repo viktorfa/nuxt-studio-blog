@@ -1,5 +1,5 @@
 ---
-title: Google product search vs vertex ai multimodal embeddings
+title: Google Product Search vs Vertex AI multimodal embeddings
 date: 2023-11-13
 language: english
 draft: false

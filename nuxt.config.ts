@@ -1,4 +1,6 @@
-export default defineNuxtConfig({
+import type { NuxtConfig } from "nuxt/config";
+
+const nuxtConfig: NuxtConfig = {
   // https://github.com/nuxt-themes/alpine
   extends: "@nuxt-themes/alpine",
   experimental: {
@@ -11,7 +13,9 @@ export default defineNuxtConfig({
     "@nuxtjs/plausible",
     // https://github.com/nuxt/devtools
     "@nuxt/devtools",
+    "nuxt-simple-sitemap",
   ],
+  site: { url: "https://blog.vikfand.com" },
   app: {
     head: {
       link: [
@@ -23,4 +27,6 @@ export default defineNuxtConfig({
       ],
     },
   },
-});
+};
+
+export default defineNuxtConfig(nuxtConfig);

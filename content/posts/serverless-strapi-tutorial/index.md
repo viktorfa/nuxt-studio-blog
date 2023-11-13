@@ -9,10 +9,6 @@ draft: false
 
 ## Motivation
 
-::GistIsland{gist="viktorfa/909da389bfccd7255b147a63487ff7fd"}
-::
-
-
 The JAM Stack and Serverless are two trends in web development that have a lot going on right now. One of the most common thing to do for a web developer is to create a website with a CMS. Static sites in themselves follow the serverless paradigm of infinite scalability, pay-per-use, and no-touch operations. But we lack an all-round CMS with the same properties. 
 
 Wordpress can be used as a headless CMS for modern front-ends, but the old giant is still not ready for more than a few use cases. There are managed CMS-es such as [Contentful](https://www.contentful.com/) and [Cosmic](https://www.cosmicjs.com/). These are good products, but are expensive for many users. Furthermore, they are not open source which entails some drawbacks such as not being very flexible.
@@ -44,17 +40,17 @@ yarn create strapi-app sls-strapi --quickstart
 
 This will create a basic Strapi app with the file based database SQLite in the `sls-strapi` folder. If successful, Strapi will run on `http://localhost:1337`.
 
-![./Untitled.png](./Untitled.png)
+![Untitled.png](Untitled.png)
 
-![./Untitled 1.png](./Untitled 1.png)
+![Untitled 1.png](Untitled_1.png)
 
 While we won't use this instance of Strapi with the SQLite database, you should make at least one content type in Strapi either through the content type builder or by adding a content type in the `api/` folder. I will create a content type called **page** with a single field called **title**. Make the content type and wait for the server to restart.
 
-![./Untitled 2.png](./Untitled 2.png)
+![Untitled 2.png](Untitled_2.png)
 
 Add a single item to the collection, then test that it works by getting `http://localhost:1337/pages`. You will get a `403 FORBIDDEN` message, as we need to allow unauthenticated users read access to the collection. 
 
-![./Untitled 3.png](./Untitled 3.png)
+![Untitled 3.png](Untitled_3.png)
 
 Go to Roles & Permissions, edit the Public group and add permissions to read. `http://localhost:1337/pages` should now respond with your single page item.
 
@@ -78,18 +74,18 @@ yarn add serverless-http
 **TIP**
 Use a profile in your Serverless config with AWS credentials.
 
-[https://gist.github.com/viktorfa/909da389bfccd7255b147a63487ff7fd](https://gist.github.com/viktorfa/909da389bfccd7255b147a63487ff7fd)
-`gist:viktorfa/909da389bfccd7255b147a63487ff7fd`
+::GistIsland{gist="viktorfa/909da389bfccd7255b147a63487ff7fd"}
+::
 
-[https://gist.github.com/viktorfa/8186fa9becd42baf5e83868a93de9297](https://gist.github.com/viktorfa/8186fa9becd42baf5e83868a93de9297)
-`gist:viktorfa/8186fa9becd42baf5e83868a93de9297`
+::GistIsland{gist="viktorfa/8186fa9becd42baf5e83868a93de9297"}
+::
 
 You should now have `app.js` and `serverless.yml` in your root directory.
 
 Before we try it, update the database config in `config/database.js`, so that the storage path for SQLite in the cloud is in the writeable `/tmp` directory.
 
-[https://gist.github.com/viktorfa/da283a1381aaa6db8e7e89570ec5b08f](https://gist.github.com/viktorfa/da283a1381aaa6db8e7e89570ec5b08f)
-`gist:viktorfa/da283a1381aaa6db8e7e89570ec5b08f`
+::GistIsland{gist="viktorfa/da283a1381aaa6db8e7e89570ec5b08f"}
+::
 
 It should now be possible to run Strapi as a Serverless app. Test it locally by executing
 
@@ -101,7 +97,7 @@ This will start the serverless-offline server, but Strapi won't start until you 
 
 Serverless will add a `/dev` prefix to your URL path, and we need to configure Strapi to work around this later. This is a feature of API Gateway, and not easy to get around without using a custom domain.
 
-![./Untitled 4.png](./Untitled 4.png)
+![Untitled 4.png](Untitled_4.png)
 
 Now that we have it working locally, maybe we should try to deploy it to the cloud just to see that everything works as it should there too. Let Serverless deploy it with:
 
@@ -109,7 +105,7 @@ Now that we have it working locally, maybe we should try to deploy it to the clo
 sls deploy --verbose
 ```
 
-![./Untitled 5.png](./Untitled 5.png)
+![Untitled 5.png](Untitled_5.png)
 
 That did not work. The size of our application is way too large for Lambda. This is a common problem when attempting to run applications that are not at all designed for Lambda, in Lambda.
 
@@ -121,8 +117,8 @@ First, let's follow the [official guide](https://strapi.io/documentation/v3.x/ad
 
 Edit the config of `config/server.js` to disable the admin panel, and take care of the path prefix.
 
-[https://gist.github.com/viktorfa/23847bd9f9926872f860455329b0153e](https://gist.github.com/viktorfa/23847bd9f9926872f860455329b0153e)
-`gist:viktorfa/23847bd9f9926872f860455329b0153e`
+::GistIsland{gist="viktorfa/23847bd9f9926872f860455329b0153e"}
+::
 
 We will also edit the build command in `package.json` to run a bash script after the normal build.
 
@@ -141,8 +137,8 @@ Create a script called [`post-build.sh`](http://post-build.sh) in a new folder c
 chmod +x scripts/post-build.sh
 ```
 
-[https://gist.github.com/viktorfa/4d0d3e1d9f6f317d7037bcead27f28c0](https://gist.github.com/viktorfa/4d0d3e1d9f6f317d7037bcead27f28c0)
-`gist:viktorfa/4d0d3e1d9f6f317d7037bcead27f28c0`
+::GistIsland{gist="viktorfa/4d0d3e1d9f6f317d7037bcead27f28c0"}
+::
 
 The script simply moves the bundle files in `build/` to a sub folder called `/dev` which fixes the issue with our path prefixes.
 
@@ -152,7 +148,7 @@ Build the admin panel with:
 IS_OFFLINE=true yarn build
 ```
 
-![./Untitled 6.png](./Untitled 6.png)
+![Untitled 6.png](Untitled_6.png)
 
 Verify that the current setup works by starting the serverless-offline app with `sls offline`, and then serve the frontend as a separate static site.
 
@@ -163,7 +159,7 @@ npm i -g serve
 serve build/
 ```
 
-![./Untitled 7.png](./Untitled 7.png)
+![Untitled 7.png](Untitled_7.png)
 
 Go to `http://localhost:5000` and check that Strapi still works. Remember to run sls offline in the background.
 
@@ -173,14 +169,14 @@ If you can still use the Strapi admin, everything is going well.
 
 The size of our code is still not small enough to be used in Lambda, so we need to trim more. Let's explore `node_modules`.
 
-![./Untitled 8.png](./Untitled 8.png)
+![Untitled 8.png](Untitled_8.png)
 
 We see `node_modules` is a whopping 561 MB. We also see a lot of fat packages that are definitely only for frontend use, such as those containing "react", "fortawesome", or "bootstrap". We also see that some locale-data, which is just translations, use most space of all.
 
 It would be great if Strapi automagically removed all frontend stuff from `node_modules` when we run the backend on a separate server, but I don't know of any such functionality. We will therefore manually delete some excessive packages with some simple commands we put in a bash script aptly called [`trim-node-modules.sh`](http://trim-node-modules.sh/).
 
-[https://gist.github.com/viktorfa/972a4ea019fdd1f0861059a9299df544](https://gist.github.com/viktorfa/972a4ea019fdd1f0861059a9299df544)
-`gist:viktorfa/972a4ea019fdd1f0861059a9299df544`
+::GistIsland{gist="viktorfa/972a4ea019fdd1f0861059a9299df544"}
+::
 
 Install a neat tool called *node-prune* first, which automatically removes files that are certainly unnecessary, such as Readmes etc. Get it done with:
 
@@ -198,13 +194,13 @@ Finish this step by successfully deploying with:
 sls deploy --verbose
 ```
 
-![./Untitled 9.png](./Untitled 9.png)
+![Untitled 9.png](Untitled_9.png)
 
 Stack update finished... 🚀
 
 That's what we want to see. The backend is now available online, and you can check it by visiting the generated endpoint ([https://7s7w7gyekl.execute-api.us-east-1.amazonaws.com/dev/](https://7s7w7gyekl.execute-api.us-east-1.amazonaws.com/dev/) for me). 
 
-![./Untitled 10.png](./Untitled 10.png)
+![Untitled 10.png](Untitled_10.png)
 
 Our database is not at all suitable for Lambda, as it's an SQLite db where the data is stored in the local filesystem which can reset between Lambda invocations. However, it should work for demonstration purposes.
 
@@ -214,7 +210,7 @@ Check your logs with:
 sls logs --function api --tail
 ```
 
-![./Untitled 11.png](./Untitled 11.png)
+![Untitled 11.png](Untitled_11.png)
 
 Update `config/server.js` with the newly generated endpoint.
 
@@ -259,11 +255,11 @@ We don't have a perfect database option for all uses cases. If you use Strapi as
 
 Just [create an account](https://www.mongodb.com/cloud/atlas/register) and set up a free Mongo cluster in Atlas for the purpose of this tutorial. You must create a database user with a username and password, then get the connection URI and insert it as an environment variable to our Lambda function.
 
-![./Untitled 12.png](./Untitled 12.png)
+![Untitled 12.png](Untitled_12.png)
 
 Get the connection URI string in Cluster > Connect > Connect your application.
 
-![./Untitled 13.png](./Untitled 13.png)
+![Untitled 13.png](Untitled_13.png)
 
 Add the connection URI as an environment variable.
 
@@ -277,8 +273,8 @@ provider:
 
 We then edit `config/database.js` to tell Strapi to use the Mongo database. 
 
-[https://gist.github.com/viktorfa/3975ee2e67f38e885d02b4e2c4c1097e](https://gist.github.com/viktorfa/3975ee2e67f38e885d02b4e2c4c1097e)
-`gist:viktorfa/3975ee2e67f38e885d02b4e2c4c1097e`
+::GistIsland{gist="viktorfa/3975ee2e67f38e885d02b4e2c4c1097e"}
+::
 
 Lastly, install the Strapi connector for Mongo:
 
@@ -299,8 +295,8 @@ We create a simple S3 bucket in our Cloudformation templates. An advantage of th
 
 We edit the `provider`, `custom`, `plugins`, and `resources` sections of our `serverless.yml` config.
 
-[https://gist.github.com/viktorfa/76e6ee19dd53e3f1a03db360eabb5263](https://gist.github.com/viktorfa/76e6ee19dd53e3f1a03db360eabb5263)
-`gist:viktorfa/76e6ee19dd53e3f1a03db360eabb5263`
+::GistIsland{gist="viktorfa/76e6ee19dd53e3f1a03db360eabb5263"}
+::
 
 Install the Strapi provider for S3 upload and two other plugins:
 
@@ -312,8 +308,8 @@ yarn add -D serverless-cloudformation-sub-variables
 
 We need to add some config in a new file called `config/plugins.js`. S3 in Lambda works quite automagically, so the only config we need is the bucket name. Note that the BUCKET_NAME environment variable will be "[Object object]" if you run locally with `sls offline`, because we get the bucket name in `serverless.yml` with a Cloudformation *!Ref*. After you deploy, you get the name of your S3 bucket which you can use to test with S3 locally later.
 
-[https://gist.github.com/viktorfa/6d8973dd95998b1325f4f8c981e08bf8](https://gist.github.com/viktorfa/6d8973dd95998b1325f4f8c981e08bf8)
-`gist:viktorfa/6d8973dd95998b1325f4f8c981e08bf8`
+::GistIsland{gist="viktorfa/6d8973dd95998b1325f4f8c981e08bf8"}
+::
 
 To create the S3 bucket, deploy with 
 
@@ -324,9 +320,9 @@ sls deploy --verbose
 
 Once deployed, visit `http://localhost:5000` to visit the admin user interface. Go to Media Library and try to upload a file.
 
-![./Untitled 14.png](./Untitled 14.png)
+![Untitled 14.png](Untitled_14.png)
 
-![./Untitled 15.png](./Untitled 15.png)
+![Untitled 15.png](Untitled_15.png)
 
 **File upload and API Gateway**
 Uploading files when using Serverless can be a bit of a hassle. All HTTP requests goes through an Amazon service called API Gateway. This gateway processes files in a certain way. 

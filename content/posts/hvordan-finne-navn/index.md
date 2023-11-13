@@ -30,23 +30,26 @@ _Kjøp meg og smil :):):):)_
 
 Denne er litt vrien. Jeg tenker på Kong Haakon, Lohengrin, Sport Lunch – kanskje Cuba og Bounty. Lohengrin ble laget spesielt i forbindelse med visningen av Wagners opera med samme navn på Nationaltheatret i 1911, og ble designet av arkitekten Henrik Bull. 108 år senere besluttet Freia å ikke produsere sjokoladen lenger pga lite etterspørsel. Skulle de byttet navn til _The Sound of Music_ eller noe? Denne taktikken er på en måte en målrettet bruk av å ta et generelt positivt ord.
 
-![Sjokoladen Lohengrin](https://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/Lohengrin.jpg/1200px-Lohengrin.jpg)
+![Sjokoladen Lohengrin](Lohengrin.jpg)
 _Lohengrin ble spist for første gang i 1911. Salget stoppet i februar 2019 pga lite etterspørsel._
 
 ### 5 – Ta et ord løst tilknyttet ideen din
 
 Stratos høres litt luftig ut, eller hva? Bounty er en tropisk øy i stillehavet og bruker den tropiske ingrediensen kokos. Troika er en trio og består av 3 elementer. Twix har to "pinner", og twigs betyr pinne på engelsk, og twix betyr sikkert tvillinger på latin eller noe. Føler at de som velger navn på denne måten vil være litt kreative, men ikke for kreative.
-![Gammel reklame for Troika og den forgjenger Gele-trøffel.](https://brands-a.prod.onewp.net/app/uploads/sites/2/2017/12/Troika-historie_gamle-annonser_1200x750-720x450.jpg)
+![Gammel reklame for Troika og dens forgjenger Gele-trøffel.](troika_gammel.jpeg)
 _Troika tok steget fra å være en bokstavelig-talt-sjokolade kalt gele-trøffel, til dagens navn som lover trippel nytelse._
 
 ### 6 – Bare ta et ord...
 
 Noen navn ser ut til å bare komme fra løse lufta. Monolitt, Firkløver, Hval, Lion ... Hobby! Det er ikke nye ord, men de har ingenting med sjokolade å gjøre. Man må bygge det nye ordet som et merkenavn, og det er et ord folk er kjent med, og som er lett å si.
-![Sjokoladen Hobby](http://image.klikk.no/?imageId=3335343&panoy=0&panox=0&heighty=0&heightx=0&width=300&height=170)
+![Sjokoladen Hobby](hobby.jpeg)
 _Hobby. For deg som har en hobby._
 
 Mangler jeg noe? Kan noen lage en tilsvarende for bloggere? Komikerfrue og Trines Matblogg er bokstavelig-talt-navn. Sofie Elise bygger et brand rundt sitt ekte navn. Voe er et helt nytt ord?
 
 PS:  
 Kom over en gammel reklame for Troika da jeg gjorde "research" for denne artikkelen. Husker den ofte gikk i reklamepausen mellom Mot i Brøstet og Hotel Cæsar..
-`youtube:https://www.youtube.com/embed/AuXk7nNFhlE`
+
+<video controls>
+    <source src="/troika_lang.mp4" type="video/mp4">
+</video>

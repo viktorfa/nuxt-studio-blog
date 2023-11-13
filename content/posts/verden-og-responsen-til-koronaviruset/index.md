@@ -22,14 +22,14 @@ Midt under den kinesiske nyttårsfeiringen fikk vi et tegn som kunne tolkes tyde
 
 På grunn av stor kontroll av media i Kina er det svært vanskelig for observatører å få et godt bilde over hva som foregår. Det man stort sett ser er enten gladnyheter eller fordømmelser, mens ubekreftede rykter spres hele tiden over internett. De gruppene som faktisk vet hva som foregår er de som jobber på gulvet og lokale myndigheter. Begge disse gruppene er livredde for å skape trøbbel ved å komme med dårlige nyheter, så ting blir ofte ikke rapportert opp. Dr Li Wenliang er en av de på gulvet som snakket litt for høyt om mulige dårlige nyheter. Han ble straffet for å spre falske rykter, for å så dø av koronaviruset og etterlate seg en gravid kone. Dette tragiske dødsfallet skapte så store reaksjoner hos kinesere at sensurmyndighetene unngikk å fjerne frustrerte Wechat-poster med subtil kritikk av styresmaktene. Men da støvet la seg noen dager senere ble de sensurert igjen.
 
-![Logg fra chatgruppa Dr Li Wenliang informerte kolleger om det nye viruset den 30. desember 2019.](./li wenliang chat.png)
+![Logg fra chatgruppa Dr Li Wenliang informerte kolleger om det nye viruset den 30. desember 2019.](li_wenliang_chat.png)
 
 Hvorfor oppførte myndighetene i Wuhan seg sånn de gjorde mot Dr Li? De var selv livredde for å komme med dårlige nyheter til sjefene sine i Beijing. De håpet at det hele ville gå over av seg selv, og visste at det bare var noe å tape ved å komme med bekymringer.
 
 Li Wenliang ble avhørt av politiet for å ha spredt usanne rykter, og tvunget til å skrive under på en innrømmelse av skyld. Selv om ryktespredning kan ha negative konsekvenser, er dette en ganske så undertrykkende handling av myndighetene. Og sett i konteksten av at ryktene han spredde kun foregikk i en privat chatgruppe for kolleger og alumni fra universitetet hans er det nesten Orwelliansk. Det skal sies at Dr Li faktisk sa at utbruddet var av _SARS_, noe som faktisk var ubekreftet, men myndighetenes reaksjon var fortsatt litt overdreven.  
 Det var akkurat i disse dager at verdens helsemyndigheter og epidemiforskere spent venta på mer informasjon fra Kina. Viktig og faktabasert informasjon som bekreftelse på smitte og genomdata kom ut senere, men man spekulere i om verden hadde fått bedre informasjon fortere dersom miljøet for diskusjon og åpenhet hadde vært bedre i Kina. Vi aner ikke hvor mange leger og forskere som visste noe, men ikke turte lufte tankene da de visste at selv å dele informasjon med kolleger kunne føre til avhør av politiet.
 
-![Artikkel fra kinesisk statsmedia med overskrift "Turning the tide" -- Xi leads anti-virus war toward victory](./xi leder krigen mot seier.png)
+![Artikkel fra kinesisk statsmedia med overskrift "Turning the tide" -- Xi leads anti-virus war toward victory](./xi_leder_krigen_mot_seier.png)
 _Denne artikkelen har ikke med begynnelsen av utbruddet å gjøre, men legg merke til språkbruk og mild persondyrkelse i kinesisk statsmedia._
 
 ## Tid til å reagere
@@ -40,7 +40,7 @@ Vi sto da ovenfor en "long tail" situasjon. Det vil si at de mulige scenarionene
 
 Jeg har litt sympati for politikerne i den situasjonen. De kunne satt igang tiltak som kunne reddet oss senere, men ingen ville takke dem for det. For i ettertid kunne man sagt: "Der ser du, det var ikke verre enn influensa!". Ved å ikke gjøre noe slapp man å ta et vanskelig valg, og man kunne fortsatt komme og redde dagen senere. En politiker kunne også vise til anbefalinger fra supranasjonale organisasjoner som WHO, og slik beskytte sitt eget skinn ved å hevde at ingen visste bedre.
 
-![Amerikanske medier skaper narrativet om at det nye viruset ikke er verre enn influensa.](./its just a flu media.jpeg)
+![Amerikanske medier skaper narrativet om at det nye viruset ikke er verre enn influensa.](./its_just_a_flu_media.jpeg)
 
 ## Verdens inkompetente helseorganisasjon
 
@@ -54,7 +54,7 @@ WHO er er institusjon med tyngde. Det de sier og gjør blir sett av både politi
 
 Av et ønske om å ha et godt forhold til Kina har organisasjonen gang på gang uttalt seg feilaktig eller ufullstendig. Etter en Den 14. januar uttalte de at det ikke fantes klart bevis for at viruset var smittsomt. Ja ok, men at det ikke finnes bevis er ikke et bevis på at det ikke er noe der. Hvorfor sa de dette da situasjonen fortsatt var uklar, om det ikke var for å tilfredsstille Kina?
 
-![WHO melder i en Tweet at det ikke finnes bevis for menneske-til-menneske smitte for viruset.](./who no evidence.png)
+![WHO melder i en Tweet at det ikke finnes bevis for menneske-til-menneske smitte for viruset.](./who_no_evidence.png)
 
 Den nåværende generalsekretæren for WHO sa litt senere at Kina håndterte situasjonen eksemplarisk. Virkelig? Der en lege fra Wuhan ble avhørt av politiet for å dele informasjon om viruset med kolleger i en privat chatgruppe, for å senere dø av sykdommen han prøvde å redde oss fra. Der tilfeller ble bekreftet så tidlig som november. Der vi nå vet at forskning på viruset [ble tiet ned i desember](https://www.nationalreview.com/news/chinese-authorities-gagged-laboratories-in-december-over-coronavirus-sars-connection/). Der WHO ble varslet allerede 31. desember, mens i Kina var emnet praktisk talt forbudt å diskutere offentlig før 23. januar.
 WHO kom også den 31. januar med en uttalelse om at reiserestriksjoner ikke var nødvendige. Etter at flere land hadde begynt med omfattende restriksjoner, og nå i mars er mindre rammet på grunn av disse.
@@ -65,7 +65,7 @@ Det som fikk meg til å begynne å skrive denne artikkelen var da epidemolog i W
 
 En organisasjon som priser Kinas håndtering av viruset og som nekter å engang nevne at Taiwan eksisterer som et uavhengig land. Kan vi regne med at de baserer seg på nøytrale fakta, eller er de blitt et jakttrofe for Kinas kommunistparti?
 
-![Polandball illustrasjon om forskjellige lands reaksjon til viruset.](./coronavirus polandball.jpg)
+![Polandball illustrasjon om forskjellige lands reaksjon til viruset.](./coronavirus_polandball.jpg)
 
 [Li Wenliang (Wikipedia)](https://en.wikipedia.org/wiki/Li_Wenliang)  
 [Utbruddets tidslinje (Wikipedia)](https://en.wikipedia.org/wiki/Timeline_of_the_2019%E2%80%9320_coronavirus_pandemic_from_November_2019_to_January_2020)  

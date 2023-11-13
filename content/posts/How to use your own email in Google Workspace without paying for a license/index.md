@@ -32,27 +32,27 @@ The last solution allows you to use your own login without paying for a subscrip
 
 Google’s cloud platform offers something called Google Cloud Identity. It’s a complicated tool that can be used for everything from our simple case to managing complex access patterns in large organizations.
 
-![Untitled](Untitled 1.png)
+![Untitled](Untitled_1.png)
 
 To use this with Google Workspace, you need to activate it on [https://console.cloud.google.com/cloud-setup/organization](https://console.cloud.google.com/cloud-setup/organization).
 
 Select _I’m a current Workspace customer_, and enable Cloud Identity. Note that you have to verify your domain first, which is something you have to do to use Gmail with Google Workspace.
 
-![Untitled](Untitled 2.png)
+![Untitled](Untitled_2.png)
 
 You activate Cloud Identity Free in your Google Workspace [https://admin.google.com/u/0/ac/billing/catalog](https://admin.google.com/u/3/ac/billing/catalog). Click _Get Started_ and go through the short process.
 
-![Untitled](Untitled 3.png)
+![Untitled](Untitled_3.png)
 
 You should now come to the licenses page of your Google Workspace, which was not available before you activated Cloud Identity. Here you can decide who of the organization members should have a license for Google Workspace. A license means access to Gmail, Google Docs, and everything useful in Workspace.
 
 To remove yourself as a licensee, and thus not having to pay for your own account, you need to **turn off automatic licensing**.
 
-![Untitled](Untitled 4.png)
+![Untitled](Untitled_4.png)
 
 After doing that, you can go to your own user, scroll down to Licenses, and turn it off for Workspace (not for Cloud Identity!).
 
-![Untitled](Untitled 5.png)
+![Untitled](Untitled_5.png)
 
 You now save some money, and do not use any of the quota of 10 users allowed for a standard workspace.
 
@@ -68,7 +68,7 @@ If you still want to be able to see emails sent to your account in your client�
 
 To do this, go to Apps > Google Workspace > Gmail, scroll down to _Routing_ and click. Configure _Email forwarding using recipient address map_ where you enter your email in the organization, and your preferred destination email.
 
-![Untitled](Untitled 6.png)
+![Untitled](Untitled_6.png)
 
 After adding the rule, wait a few minutes before you send a test email, as this takes some time to update in Google’s systems. Also remember that you have to set up Gmail for this workspace by adding MX records etc. in your DNS settings for email forwarding to work.
 
