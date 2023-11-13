@@ -10,7 +10,7 @@ description: "Vi lever nå i de siste månedene før giganten Amazon endelig kom
 lang: norwegian
 ---
 
-![Et fraktfly fra Amazon med Prime-logoen på siden. I forgrunnen pakker fra Amazon klare til levering.](amazon-prime-plane.png)
+![Et fraktfly fra Amazon med Prime-logoen på siden. I forgrunnen pakker fra Amazon klare til levering.](amazon-prime-plane.jpg)
 
 Vi lever nå i de siste månedene før giganten Amazon endelig kommer til Norden. Vårt verdenshjørne gjenstår som et av de siste markedene uten en eller flere *kjempeplattformer* for netthandel, og det er der Amazon ser muligheten.
 
