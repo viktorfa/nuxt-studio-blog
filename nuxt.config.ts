@@ -5,6 +5,7 @@ const nuxtConfig: NuxtConfig = {
   extends: "@nuxt-themes/alpine",
   experimental: {
     componentIslands: true, // false or 'local+remote'
+    noScripts: true,
   },
   modules: [
     ["@nuxtjs/tailwindcss", { viewer: false }],
@@ -16,15 +17,12 @@ const nuxtConfig: NuxtConfig = {
     "nuxt-simple-sitemap",
   ],
   site: { url: "https://blog.vikfand.com" },
-  app: {
-    head: {
-      link: [
-        {
-          type: "text/css",
-          rel: "stylesheet",
-          href: "https://github.githubassets.com/assets/gist-embed-4ac6018bcc05457cde2f66d2e7299d11.css",
-        },
-      ],
+
+  hooks: {
+    // Bug that causes nuxi build to not exit, just hanging there. Only with nuxt-content-assets
+    // https://github.com/nuxt/cli/issues/193  https://github.com/davestewart/nuxt-content-assets/issues/49
+    close: (nuxt) => {
+      if (!nuxt.options._prepare) process.exit();
     },
   },
 };
