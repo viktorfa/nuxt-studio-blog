@@ -5,7 +5,8 @@ const nuxtConfig: NuxtConfig = {
   extends: "@nuxt-themes/alpine",
   experimental: {
     componentIslands: true, // false or 'local+remote'
-    noScripts: true,
+    // noScripts for public production on cf pages, scripts for nuxt studio
+    noScripts: !process.env.NUXT_PUBLIC_STUDIO_API_URL,
   },
   modules: [
     ["@nuxtjs/tailwindcss", { viewer: false }],
