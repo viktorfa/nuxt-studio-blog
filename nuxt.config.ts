@@ -18,6 +18,10 @@ const nuxtConfig: NuxtConfig = {
     "nuxt-simple-sitemap",
   ],
   site: { url: "https://blog.vikfand.com" },
+  plausible: {
+    ignoredHostnames: ["localhost"],
+    apiHost: "https://folg.vikfand.com",
+  },
 
   hooks: {
     // Bug that causes nuxi build to not exit, just hanging there. Only with nuxt-content-assets
